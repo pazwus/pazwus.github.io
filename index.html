@@ -24,11 +24,24 @@
         document.getElementById("demo").style.backgroundColor = "white";
       }
     }
+     
+      if (isClicked) {
+        callApi();
+      }
+     
+    function callApi() {
+      async function getText("8eacf69e-3951-11ee-b484-325096b39f47") {
+    let myObject = await fetch("8eacf69e-3951-11ee-b484-325096b39f47");
+    let myText = await myObject.text();
+  myDisplay(myText);
+}
+    }
     </script>
     
 <button type="button" onclick="myFunction()">Click Me!</button>
 
 <button onclick="location.href='http://www.google.com'" type="button">Me too</button>
 
+<button type="button" onclick="callApi();">why not</button>
 </body>
 </html>
